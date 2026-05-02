@@ -120,14 +120,6 @@ PROJECTS = [
 
 CREDENTIALS = [
     {
-        "title": "Modern Stack & Backend Engineering",
-        "subtitle": "Technical Specialization",
-        "description": "Expertise in high-performance API development using FastAPI and asynchronous Python patterns.\nAdvanced database management with MongoDB (NoSQL) and SQLite for lightweight local storage.\nIntegration of complex API ecosystems and implementation of modern 'hype' technologies like Agentic Workflows and Vector Databases.\nFocus on building production-ready, scalable backend architectures with robust data integrity.",
-        "category": "work",
-        "image_url": "/credentials/technical_expertise_stack.png",
-        "order": 0,
-    },
-    {
         "title": "KAIM Professional AI Specialist",
         "subtitle": "Knowledge AI Model Certification",
         "description": "Mastery of Retrieval-Augmented Generation (RAG) and Large Language Model (LLM) orchestration for complex problem-solving.\nAdvanced proficiency in evaluating model architectures, latency optimization, and knowledge grounding.\nSpecialized expertise in deploying production-ready AI systems with a focus on systemic reliability.",
