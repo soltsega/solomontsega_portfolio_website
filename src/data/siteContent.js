@@ -37,6 +37,7 @@ export const skillGroups = [
     tags: [
       'Retrieval-Augmented Generation (RAG)',
       'LLM Fine-tuning & Evaluation',
+      'Agentic Workflows',
       'Prompt & Context Engineering',
       'Chatbot Deployment',
       'LangChain',
@@ -61,6 +62,8 @@ export const skillGroups = [
     tags: [
       'ETL/ELT Frameworks',
       'DBT Transformation',
+      'MongoDB',
+      'SQLite',
       'Data Warehousing',
       'Advanced SQL',
       'Data Cleaning',
@@ -71,9 +74,10 @@ export const skillGroups = [
     icon: 'plus',
     tags: [
       'Docker',
+      'FastAPI',
+      'API Integration',
       'CI/CD (GitHub Actions)',
       'Unit Testing',
-      'API Deployment',
       'Power BI',
       'Microsoft Excel',
       'Streamlit',
@@ -87,6 +91,7 @@ export const skillGroups = [
       'Java (OOP)',
       'C++',
       'JavaScript (React, ES6+)',
+      'Vector Databases',
       'HTML5 & CSS3',
       'Algorithms & Problem Solving',
     ],

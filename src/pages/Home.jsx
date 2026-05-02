@@ -123,10 +123,10 @@ export default function Home() {
               <picture>
                 <source
                   media="(max-width: 480px)"
-                  srcSet="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3500&pause=1000&color=70A5FD&center=true&vCenter=true&random=false&width=400&lines=Machine+Learning+%7C+Data+Science+%7C+A.I.;NLP+%26+Transformer+Models+%7C+LLMs+%26+RAG;SQL+%26+Advanced+Data+Analysis;AI+Model+Evaluation+%26+Deployment"
+                  srcSet="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3500&pause=1000&color=70A5FD&center=true&vCenter=true&random=false&width=400&lines=Machine+Learning+%7C+Data+Science+%7C+A.I.;NLP+%26+Transformer+Models+%7C+LLMs+%26+RAG;FastAPI+%7C+MongoDB+%7C+SQLite;Agentic+Workflows+%7C+Vector+DBs;SQL+%26+Advanced+Data+Analysis;AI+Model+Evaluation+%26+Deployment"
                 />
                 <img
-                  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=1000&color=70A5FD&center=true&vCenter=true&random=false&width=600&lines=Machine+Learning+%7C+Data+Science+%7C+A.I.;NLP+%26+Transformer+Models+%7C+LLMs+%26+RAG;SQL+%26+Advanced+Data+Analysis+%7C+Visualization;AI+Model+Evaluation+%26+Deployment+%7C+MLOps;Python+%7C+FastAPI+%7C+Full-Stack+Development;Turning+Raw+Data+Into+Actionable+Intelligence"
+                  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=1000&color=70A5FD&center=true&vCenter=true&random=false&width=600&lines=Machine+Learning+%7C+Data+Science+%7C+A.I.;NLP+%26+Transformer+Models+%7C+LLMs+%26+RAG;FastAPI+%7C+MongoDB+%7C+SQLite;Agentic+Workflows+%7C+Vector+DBs;SQL+%26+Advanced+Data+Analysis+%7C+Visualization;AI+Model+Evaluation+%26+Deployment+%7C+MLOps;Turning+Raw+Data+Into+Actionable+Intelligence"
                   alt="Typing SVG"
                   className="hero-typing-svg"
                 />
