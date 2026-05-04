@@ -994,6 +994,10 @@ textarea.glass-input {
     gap: 2rem;
   }
 
+  .hero-image {
+    flex: 0 0 250px;
+  }
+
   .profile-photo {
     width: 250px;
     height: 250px;
@@ -1030,6 +1034,10 @@ textarea.glass-input {
 @media (max-width: 480px) {
   .container {
     padding: 0 0.75rem;
+  }
+
+  .hero-image {
+    flex: 0 0 170px;
   }
 
   .profile-photo {
