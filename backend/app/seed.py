@@ -120,6 +120,31 @@ PROJECTS = [
 
 CREDENTIALS = [
     {
+        "title": "Information Network Security Administration (INSA)",
+        "subtitle": "Emerging Technologies Department - Summer Internship",
+        "description": "Engaged in specialized research and development across multiple advanced technological domains.\nExplored and applied principles of cryptography, blockchain technology, and quantum mechanics.\nContributed to projects involving AI engineering and big data analytics in a high-security environment.",
+        "category": "work",
+        "image_url": "/credentials/insa_logo.png",
+        "order": 0,
+    },
+    {
+        "title": "Addis Ababa University",
+        "subtitle": "Bioinformatics Department - Orphan Crops Knowledgebase",
+        "description": "Building the database design and implementation end-to-end for a biological platform similar to NCBI and Ensembl Plants.\nRequires high attention to detail to ensure robust data management and availability for bioinformatics research.\nActive project starting from early July 2026 to present.",
+        "category": "work",
+        "image_url": "/credentials/aau_logo.png",
+        "order": 1,
+    },
+    {
+        "title": "Blockchain basics",
+        "subtitle": "Cyfrin",
+        "description": "Comprehensive course covering the fundamentals of blockchain technology, decentralized systems, and smart contracts.\nProvides foundational understanding necessary for advanced blockchain engineering and Web3 development.",
+        "category": "academic",
+        "image_url": "/credentials/cyfrin_logo.png",
+        "verify_link": "https://profiles.cyfrin.io/u/tsegasolomon538/achievements/blockchain-basics",
+        "order": 21,
+    },
+    {
         "title": "KAIM Professional AI Specialist",
         "subtitle": "Knowledge AI Model Certification",
         "description": "Mastery of Retrieval-Augmented Generation (RAG) and Large Language Model (LLM) orchestration for complex problem-solving.\nAdvanced proficiency in evaluating model architectures, latency optimization, and knowledge grounding.\nSpecialized expertise in deploying production-ready AI systems with a focus on systemic reliability.",
