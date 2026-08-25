@@ -50,7 +50,7 @@ function CredentialRow({ credential, reverse = false }) {
 export default function Credentials() {
   const location = useLocation();
   const [credentials, setCredentials] = useState([]);
-  const [activeCategory, setActiveCategory] = useState('work');
+  const [activeCategory, setActiveCategory] = useState('internship');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
@@ -125,11 +125,19 @@ export default function Credentials() {
       >
         <button
           type="button"
-          className={`cert-tab-btn ${activeCategory === 'work' ? 'active' : ''}`}
-          aria-selected={activeCategory === 'work'}
-          onClick={() => setActiveCategory('work')}
+          className={`cert-tab-btn ${activeCategory === 'internship' ? 'active' : ''}`}
+          aria-selected={activeCategory === 'internship'}
+          onClick={() => setActiveCategory('internship')}
         >
-          Skills &amp; Work Experience
+          Internship and Work Experience
+        </button>
+        <button
+          type="button"
+          className={`cert-tab-btn ${activeCategory === 'course' ? 'active' : ''}`}
+          aria-selected={activeCategory === 'course'}
+          onClick={() => setActiveCategory('course')}
+        >
+          Courses Taken
         </button>
         <button
           type="button"
