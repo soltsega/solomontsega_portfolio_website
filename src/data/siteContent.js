@@ -64,9 +64,23 @@ export const skillGroups = [
       'DBT Transformation',
       'MongoDB',
       'SQLite',
+      'Database Design & Implementation',
       'Data Warehousing',
       'Advanced SQL',
+      'Big Data Processing',
       'Data Cleaning',
+    ],
+  },
+  {
+    title: 'Blockchain & Emerging Tech',
+    icon: 'spark',
+    tags: [
+      'Blockchain Fundamentals',
+      'Cryptography',
+      'Smart Contracts',
+      'Decentralized Systems',
+      'Quantum Computing Concepts',
+      'Web3 Principles',
     ],
   },
   {
