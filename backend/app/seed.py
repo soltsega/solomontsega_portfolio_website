@@ -139,7 +139,7 @@ CREDENTIALS = [
         "title": "Blockchain basics",
         "subtitle": "Cyfrin",
         "description": "Comprehensive course covering the fundamentals of blockchain technology, decentralized systems, and smart contracts.\nProvides foundational understanding necessary for advanced blockchain engineering and Web3 development.",
-        "category": "academic",
+        "category": "work",
         "image_url": "/credentials/cyfrin_logo.png",
         "verify_link": "https://profiles.cyfrin.io/u/tsegasolomon538/achievements/blockchain-basics",
         "order": 21,
