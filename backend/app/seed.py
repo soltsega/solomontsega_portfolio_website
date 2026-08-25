@@ -173,7 +173,7 @@ CREDENTIALS = [
         "subtitle": "Data Engineering & AI",
         "description": "Intensive training and project work focusing on data pipelines, machine learning, and advanced AI systems.\\nDeveloped end-to-end data pipelines for real-world scenarios.",
         "category": "internship",
-        "image_url": "",
+        "image_url": "/credentials/KAIM_main.jpg",
         "order": 4,
     },
     {
