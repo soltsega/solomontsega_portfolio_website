@@ -886,6 +886,24 @@ textarea.glass-input {
   box-shadow: var(--glass-shadow);
 }
 
+.cert-img.icog-logo {
+  max-width: 420px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  padding: 2.5rem;
+  border: 6px solid #ed741f;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cert-img.icog-logo img {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .cert-section-heading {
   margin-bottom: -2rem;
 }

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { credentialApi } from '../api';
+import { mergeCredentials } from '../data/siteContent';
 
 function parseDescription(description) {
   return description
@@ -41,7 +42,7 @@ function CredentialRow({ credential, reverse = false }) {
         ) : null}
       </div>
       {credential.image_url ? (
-        <div className="cert-img">
+        <div className={`cert-img ${credential.image_url.includes('icog_logo') ? 'icog-logo' : ''}`}>
           <img src={credential.image_url} alt={credential.title} />
         </div>
       ) : null}
@@ -51,7 +52,7 @@ function CredentialRow({ credential, reverse = false }) {
 
 export default function Credentials() {
   const location = useLocation();
-  const [credentials, setCredentials] = useState([]);
+  const [credentials, setCredentials] = useState(() => mergeCredentials());
   const [activeCategory, setActiveCategory] = useState('internship');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -77,7 +78,7 @@ export default function Credentials() {
       try {
         const response = await credentialApi.getAll();
         if (!ignore) {
-          setCredentials(response.data);
+          setCredentials(mergeCredentials(response.data));
           setError('');
         }
       } catch (fetchError) {
@@ -172,7 +173,6 @@ export default function Credentials() {
         {error ? <div className="error-banner">{error}</div> : null}
 
         {!loading &&
-          !error &&
           filteredCredentials.map((credential, index) => {
             return (
               <div key={credential.id}>

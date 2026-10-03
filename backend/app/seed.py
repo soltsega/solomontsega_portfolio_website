@@ -124,7 +124,7 @@ CREDENTIALS = [
         "subtitle": "iCog Labs | August 2026–Present",
         "description": "Joined iCog as a Machine Learning Intern.",
         "category": "internship",
-        "image_url": None,
+        "image_url": "/credentials/icog_logo.png",
         "order": 0,
     },
     {
