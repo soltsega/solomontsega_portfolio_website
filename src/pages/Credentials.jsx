@@ -172,14 +172,11 @@ export default function Credentials() {
         {loading ? <div className="loading">Loading credentials...</div> : null}
         {error ? <div className="error-banner">{error}</div> : null}
 
-        {!loading &&
-          filteredCredentials.map((credential, index) => {
-            return (
-              <div key={credential.id}>
-                <CredentialRow credential={credential} reverse={index % 2 === 1} />
-              </div>
-            );
-          })}
+        {filteredCredentials.map((credential, index) => (
+          <div key={credential.id}>
+            <CredentialRow credential={credential} reverse={index % 2 === 1} />
+          </div>
+        ))}
       </div>
     </div>
   );

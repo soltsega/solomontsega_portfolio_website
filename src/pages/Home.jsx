@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { projectApi } from '../api';
-import { aboutParagraphs, projectCategories, skillGroups } from '../data/siteContent';
+import { aboutParagraphs, mergeProjects, projectCategories, skillGroups } from '../data/siteContent';
 
 function SkillIcon({ type }) {
   switch (type) {
@@ -51,7 +51,7 @@ const fadeInUp = {
 };
 
 export default function Home() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(() => mergeProjects());
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [projectsLoading, setProjectsLoading] = useState(true);
   const [status, setStatus] = useState({ type: 'idle', message: '' });
@@ -69,7 +69,7 @@ export default function Home() {
       try {
         const response = await projectApi.getAll();
         if (!ignore) {
-          setProjects(response.data);
+          setProjects(mergeProjects(response.data));
         }
       } catch (error) {
         if (!ignore) {
@@ -196,10 +196,9 @@ export default function Home() {
           <div className="projects-grid" id="projects-grid" role="tabpanel">
             {projectsLoading ? <div className="loading">Loading projects...</div> : null}
 
-            {!projectsLoading &&
-              visibleProjects.map((project, index) => (
-                <ProjectCard key={project.id} project={project} delay={index * 0.1} />
-              ))}
+            {visibleProjects.map((project, index) => (
+              <ProjectCard key={project.id} project={project} delay={index * 0.1} />
+            ))}
 
             {!projectsLoading && visibleProjects.length === 0 ? (
               <div className="glass no-results-message">

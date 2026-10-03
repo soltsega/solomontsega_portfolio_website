@@ -1,3 +1,5 @@
+import portfolioFallback from './portfolioFallback.json';
+
 export const projectVisuals = {
   'RAG Complaint Chatbot': 'visual-chatbot',
   'Arat Kilo Community Hub': 'visual-community',
@@ -13,55 +15,18 @@ export const projectVisuals = {
   'Insurance Risk Analysis': 'visual-insurance',
 };
 
-// Keep these recent records visible even when the production API's database
-// has not yet received the latest seed data.
-export const recentCredentials = [
-  {
-    id: 'icog-ml-internship',
-    title: 'Machine Learning Intern',
-    subtitle: 'iCog Labs | August 2026–Present',
-    description: 'Joined iCog as a Machine Learning Intern.',
-    category: 'internship',
-    image_url: '/credentials/icog_logo.png',
-    order: 0,
-  },
-  {
-    id: 'coursera-blockchain-basics',
-    title: 'Blockchain Basics',
-    subtitle: 'University at Buffalo | Coursera | September 2026',
-    description: 'Credential ID: CAVWBMBYLCL2',
-    category: 'course',
-    image_url: null,
-    verify_link: 'https://www.coursera.org/account/accomplishments/records/CAVWBMBYLCL2',
-    order: 22,
-  },
-  {
-    id: 'coursera-introduction-to-linux',
-    title: 'Introduction to Linux',
-    subtitle: 'Edureka | Coursera | September 2026',
-    description: 'Credential ID: 3QY0Z8A639QW',
-    category: 'course',
-    image_url: null,
-    verify_link: 'https://www.coursera.org/account/accomplishments/verify/3QY0Z8A639QW',
-    order: 23,
-  },
-  {
-    id: 'coursera-linux-commands-shell-scripting',
-    title: 'Hands-on Introduction to Linux Commands and Shell Scripting',
-    subtitle: 'IBM | Coursera | October 2026',
-    description: 'Credential ID: URWCYZBVKXBM',
-    category: 'course',
-    image_url: null,
-    verify_link: 'https://www.coursera.org/account/accomplishments/records/URWCYZBVKXBM',
-    order: 24,
-  },
-];
+export const featuredProjects = portfolioFallback.projects;
+export const recentCredentials = portfolioFallback.credentials;
+
+export function mergeProjects(apiProjects = []) {
+  const projectsByTitle = new Map(featuredProjects.map((project) => [project.title, project]));
+  apiProjects.forEach((project) => projectsByTitle.set(project.title, project));
+  return [...projectsByTitle.values()].sort((a, b) => a.order - b.order);
+}
 
 export function mergeCredentials(apiCredentials = []) {
   const credentialsByTitle = new Map(recentCredentials.map((credential) => [credential.title, credential]));
-  apiCredentials.forEach((credential) => {
-    credentialsByTitle.set(credential.title, credential);
-  });
+  apiCredentials.forEach((credential) => credentialsByTitle.set(credential.title, credential));
   return [...credentialsByTitle.values()].sort((a, b) => a.order - b.order);
 }
 
