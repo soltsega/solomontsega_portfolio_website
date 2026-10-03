@@ -55,7 +55,6 @@ export default function Credentials() {
   const [credentials, setCredentials] = useState(() => mergeCredentials());
   const [activeCategory, setActiveCategory] = useState('internship');
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -79,12 +78,9 @@ export default function Credentials() {
         const response = await credentialApi.getAll();
         if (!ignore) {
           setCredentials(mergeCredentials(response.data));
-          setError('');
         }
-      } catch (fetchError) {
-        if (!ignore) {
-          setError('Unable to load credentials right now.');
-        }
+      } catch {
+        // Keep showing the bundled credential data when the API is unavailable.
       } finally {
         if (!ignore) {
           setLoading(false);
@@ -170,7 +166,6 @@ export default function Credentials() {
 
       <div className="cert-container">
         {loading ? <div className="loading">Loading credentials...</div> : null}
-        {error ? <div className="error-banner">{error}</div> : null}
 
         {filteredCredentials.map((credential, index) => (
           <div key={credential.id}>
