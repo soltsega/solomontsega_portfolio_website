@@ -120,6 +120,14 @@ PROJECTS = [
 
 CREDENTIALS = [
     {
+        "title": "Machine Learning Intern",
+        "subtitle": "iCog Labs | August 2026–Present",
+        "description": "Joined iCog as a Machine Learning Intern.",
+        "category": "internship",
+        "image_url": None,
+        "order": 0,
+    },
+    {
         "title": "Information Network Security Administration (INSA)",
         "subtitle": "Emerging Technologies Department - Summer Internship",
         "description": "Engaged in specialized research and development across multiple advanced technological domains.\nExplored and applied principles of cryptography, blockchain technology, and quantum mechanics.\nContributed to projects involving AI engineering and big data analytics in a high-security environment.",
@@ -143,6 +151,33 @@ CREDENTIALS = [
         "image_url": "/credentials/cyfrin_logo.png",
         "verify_link": "https://profiles.cyfrin.io/u/tsegasolomon538/achievements/blockchain-basics",
         "order": 21,
+    },
+    {
+        "title": "Blockchain Basics",
+        "subtitle": "University at Buffalo | Coursera | September 2026",
+        "description": "Credential ID: CAVWBMBYLCL2",
+        "category": "course",
+        "image_url": None,
+        "verify_link": "https://www.coursera.org/account/accomplishments/records/CAVWBMBYLCL2",
+        "order": 22,
+    },
+    {
+        "title": "Introduction to Linux",
+        "subtitle": "Edureka | Coursera | September 2026",
+        "description": "Credential ID: 3QY0Z8A639QW",
+        "category": "course",
+        "image_url": None,
+        "verify_link": "https://www.coursera.org/account/accomplishments/verify/3QY0Z8A639QW",
+        "order": 23,
+    },
+    {
+        "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
+        "subtitle": "IBM | Coursera | October 2026",
+        "description": "Credential ID: URWCYZBVKXBM",
+        "category": "course",
+        "image_url": None,
+        "verify_link": "https://www.coursera.org/account/accomplishments/records/URWCYZBVKXBM",
+        "order": 24,
     },
     {
         "title": "KAIM Professional AI Specialist",

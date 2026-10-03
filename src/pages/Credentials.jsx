@@ -40,9 +40,11 @@ function CredentialRow({ credential, reverse = false }) {
           </div>
         ) : null}
       </div>
-      <div className="cert-img">
-        <img src={credential.image_url} alt={credential.title} />
-      </div>
+      {credential.image_url ? (
+        <div className="cert-img">
+          <img src={credential.image_url} alt={credential.title} />
+        </div>
+      ) : null}
     </motion.div>
   );
 }
